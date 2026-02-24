@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Formulário de Feedback</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/style_form.css">
+    <link rel="shortcut icon" href="https://thumbs.dreamstime.com/b/p%C3%A3o-26364088.jpg" type="image/x-icon">
+</head>
+
+<body>
+    <header class="header-fixo">
+        <img src="./image/logo/logo_padaria1.png" alt="logo_padaria1">
+        <h1>
+            Padaria do Bairro 🍞
+        </h1>
+        <p>
+        <h2>
+            🍞 Seja Bem Vindo! 🍞
+        </h2>
+        </p>
+
+        <nav>
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="cadastro.html" target="_blank">CADASTRO</a></li>
+                <li><a href="pedidos.html" target="_blank">SEUS PEDIDOS</a></li>
+                <li><a href="feedback.html" target="_blank">SEU FEEDBACK</a></li>
+                <li><a href="contato.html" target="_blank">NOSSO CONTATO</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+
+        <fieldset>
+            <form action="#" method="post">
+                <h2>Formulário de Feedback</h2>
+                <p>Sua opinião é muito importante para nós!</p>
+
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome"><br><br>
+
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email"><br><br>
+
+                <label for="produto">Produto/Serviço:</label><br>
+                <select id="produto" name="produto" required>
+                    <option value="">Selecione uma opção</option>
+                    <option value="paes">Pães tradicionais</option>
+                    <option value="doces">Doces e bolos</option>
+                    <option value="salgados"> Salgados</option>
+                    <option value="atendimento"> Atendimento</option>
+                    <option value="ambiente"> Ambiente</option>
+                    <option value="precos"> Preços</option>
+                </select><br><br>
+
+                <h3>Avaliação Geral:</h3>
+
+                <input type="radio" id="excelente" name="avaliacao" value="excelente" required>
+                <label for="excelente"> Excelente</label><br>
+
+                <input type="radio" id="bom" name="avaliacao" value="bom">
+                <label for="bom"> Bom</label><br>
+
+                <input type="radio" id="regular" name="avaliacao" value="regular">
+                <label for="regular"> Regular</label><br>
+
+                <input type="radio" id="ruim" name="avaliacao" value="ruim">
+                <label for="ruim"> Ruim</label><br><br>
+
+
+                <label for="comentarios"> Comentários:</label><br>
+                <textarea id="comentarios" name="comentarios" rows="5" cols="40"
+                    placeholder="Digite aqui sua opinião, sugestão ou crítica..."></textarea><br><br>
+
+
+                <input type="checkbox" id="recomendaria" name="recomendaria">
+                <label for="recomendaria"> Recomendaria para amigos?</label><br>
+
+                <input type="checkbox" id="autoriza" name="autoriza">
+                <label for="autoriza">Autoriza publicação do depoimento?</label><br><br>
+
+                <button type="submit">Enviar Feedback!</button>
+
+            </form>
+        </fieldset>
+    </main>
+
+    <footer>
+        <section>
+<!--botão do whatsapp e o botão topo fixados no rodapé-->
+            <a href="https://wa.me/5511999999999?text=Olá,%20gostaria%20de%20mais%20informações."
+                class="whatsapp-button" target="_blank">
+                <img src="https://logodownload.org/wp-content/uploads/2015/04/whatsapp-logo-1.png" alt="WhatsApp">
+            </a>
+
+            <a href="#" class="btn-topo">
+                <img src="./image/logo/topo1.png" alt="topo1" width="60" height="60">
+            </a>
+        </section>
+        <p>© Todos os direitos reservados.</p>
+    </footer>
+
+
+
+</body>
+
+</html>

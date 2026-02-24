@@ -1,0 +1,478 @@
+/*reset do css no navegador*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*estilo de todo o site e titulos h1 2 h2*/
+body {
+    font-family: "Roboto", sans-serif;
+    background: #FFEFD5;
+    color: #2F1B14;
+    text-align: center;
+}
+
+header {
+    background-color: #D2691E;
+    text-align: center;
+}
+
+header img {
+    width: 180px;
+    float: left;
+}
+
+h1 {
+    color: #2F1B14;
+    width: 50%;
+    /* Largura necessária */
+    margin: 0 auto;
+    /* Centraliza horizontalmente */
+}
+
+header h1 {
+    font-size: 50px;
+    font-weight: 700px;
+}
+
+header h2 {
+    font-size: 32px;
+    margin-top: 30px;
+    color: #FFEFD5;
+    width: 90%;
+    /* Largura necessária */
+}
+
+.header-fixo {
+    position: sticky;
+    top: 0;
+    /* Cola no topo */
+    color: white;
+    padding: 40px 20px;
+}
+
+/*estilo para navegação*/
+nav ul {
+    list-style: none;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 40px;
+    text-align: center;
+    width: 60vw;
+    margin-left: 20%;
+    margin-right: auto;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 600;
+    padding: 10px 22px;
+    border-radius: 30px;
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(4px);
+    transition: all 0.3s ease;
+}
+
+nav a:hover {
+    background-color: #2F1B14;
+    ;
+    font-weight: bold;
+    border-radius: 100px;
+    padding: 9px 14px;
+}
+
+main p {
+    font-size: 19px;
+    padding: 30px;
+    width: 50%;
+    margin: 0 auto;
+}
+
+/*estila para tabela de preços*/
+
+table {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1500px;
+    margin: 50px auto;
+    width: 80%;
+}
+
+table thead {
+    background-color: #d49a70;
+}
+
+table th,
+table td {
+    border: 1px solid #d39161;
+    padding: 12px;
+    text-align: center;
+}
+
+table th {
+    color: #ffffff;
+}
+
+.categoria {
+    background-color: #D2691E;
+    color: #ffffff;
+}
+
+/*estilo da seção de cardápio*/
+section {
+    margin-bottom: 20px;
+    padding: 15px;
+}
+
+section article {
+    text-align: center;
+    display: inline-block;
+}
+
+article {
+    width: 350px;
+    margin: 10px;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+article:hover {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+/*estilo da seção cardápio*/
+.cardapio-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+    max-width: 1200px;
+    margin: 40px auto;
+}
+
+.cardapio-grid article {
+    background: #fff;
+    border-radius: 12px;
+    padding: 20px;
+}
+
+.cardapio-grid article img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+/*estilo da seção da galeria*/
+.galeria {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    max-width: 1200px;
+    margin: 40px auto;
+}
+
+.galeria img {
+    width: 100%;
+    height: 250px;
+    border-radius: 10px;
+}
+
+.galeria img:hover {
+    box-shadow: rgba(0, 0, 0, 1) 0px 5px 15px;
+}
+
+/*estilo dos arquivos de vídeo*/
+
+.tradicao h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-family: sans-serif;
+    /* fonte que preferir */
+}
+
+video,
+iframe {
+    border-radius: 16px;
+    /*margin: 25px auto;*/
+    /*width: 100%;
+    height: auto;*/
+}
+
+.container-videos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    max-width: 1200px;
+    margin: 40px auto;
+}
+
+.container-videos video {
+    width: 48%;
+}
+
+
+.container-videos video:hover {
+    transform: scale(1.02);
+    border-color: #bc9667;
+    /* Cor de destaque */
+}
+
+.qualidade li {
+    list-style: none;
+    padding: 10px;
+}
+
+/*estilo da tabela de horários*/
+.horario {
+    max-width: 700px;
+    margin: 50px auto;
+    background-color: #C68642;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+/*estilo do footer com a localização: address*/
+footer {
+    background-color: #D2691E;
+    text-align: center;
+    padding: 20px 10px;
+}
+
+footer h2 {
+    padding: 15px;
+}
+
+footer p {
+    font-weight: bold;
+}
+
+/*estilo para o botão do whatsapp*/
+.whatsapp-button {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 40px;
+    right: 40px;
+    background-color: #25d366;
+    color: #FFF;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 30px;
+    box-shadow: 2px 2px 3px #999;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.whatsapp-button img {
+    width: 35px;
+    height: 35px;
+}
+
+.whatsapp-button:hover {
+    background-color: #128c7e;
+}
+
+/* para rolagem suave para toda a página */
+html {
+    scroll-behavior: smooth;
+}
+
+/* estilo do botão topo */
+.btn-topo {
+    position: fixed;
+    right: 40px;
+    bottom: 110px;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+}
+
+.btn-topo img {
+    transition: 0.3s;
+}
+
+.btn-topo img:hover {
+    transform: scale(1.1);
+}
+
+/*           RESPONSIVIDADE            */
+
+/* para tela de mobile (320px – 767px) */
+
+@media (max-width: 767px) {
+
+    /* HEADER */
+    .header-fixo {
+        padding: 20px 15px;
+    }
+
+    header img {
+        float: none;
+        display: block;
+        margin: 0 auto 15px auto;
+        width: 110px;
+    }
+
+    header h1 {
+        font-size: 26px;
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    header h2 {
+        font-size: 16px;
+        width: 100%;
+        margin-top: 5px;
+        margin-bottom: 20px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        gap: 12px;
+    }
+
+    nav ul li {
+        width: 90%;
+    }
+
+    nav ul li a {
+        display: block;
+        width: 100%;
+    }
+
+    main p {
+        width: 90%;
+        font-size: 16px;
+    }
+
+    table {
+        width: 95%;
+        font-size: 14px;
+    }
+
+    .cardapio-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .galeria {
+        grid-template-columns: 1fr;
+    }
+
+    .container-videos {
+        flex-direction: column;
+    }
+
+    .container-videos video {
+        width: 95%;
+    }
+
+    iframe {
+        max-width: 95%;
+        height: 200px;
+    }
+
+    .whatsapp-button {
+        width: 50px;
+        height: 50px;
+        bottom: 20px;
+        right: 20px;
+    }
+}
+
+/* para tela de tablet (768px – 1023px) */
+
+@media (min-width: 768px) and (max-width: 1023px) {
+
+    header h1 {
+        font-size: 36px;
+    }
+
+    nav ul {
+        width: 90%;
+        margin-left: 5%;
+    }
+
+    main p {
+        width: 80%;
+    }
+
+    .cardapio-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .galeria {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .container-videos {
+        flex-direction: row;
+    }
+
+    .container-videos video {
+        max-width: 45%;
+    }
+}
+
+/* para tela de desktop (1024px – 1199px) */
+
+@media (min-width: 1024px) and (max-width: 1199px) {
+
+    .cardapio-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .galeria {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+/* para tela de desktop (1200px+) */
+
+@media (min-width: 1200px) {
+
+    .cardapio-grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .galeria {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+/* breakpoints */
+
+/*480px - telas de smartphone*/
+@media (min-width: 480px) and (max-width: 767px) {
+    .galeria {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/*1440px - telas maiores*/
+@media (min-width: 1440px) {
+    body {
+        font-size: 18px;
+    }
+
+    .cardapio-grid {
+        max-width: 1400px;
+    }
+
+    .galeria {
+        max-width: 1400px;
+    }
+}
+

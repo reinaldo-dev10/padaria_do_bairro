@@ -1,0 +1,226 @@
+/*reset do css no navegador*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* estilo de todo o site e titulos h1 2 h2 */
+body {
+    font-family: "Roboto", sans-serif;
+    background: #FFEFD5;
+    color: #2F1B14;
+    text-align: center;
+}
+
+/* estilo para o header e a navegação */
+header {
+    background-color: #D2691E;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+header img {
+    width: 180px;
+    float: left;
+}
+
+h1 {
+    color: #2F1B14;
+    width: 50%;
+    margin: 0 auto;
+}
+
+header h1 {
+    font-size: 50px;
+    font-weight: 700px;        
+}
+
+header h2 {
+    font-size: 32px;
+    margin-top: 30px;
+    color: #FFEFD5;
+    width: 90%;    
+}
+
+.header-fixo {  
+  position: sticky;
+  top: 0; /* Cola no topo */  
+  color: white;
+  padding: 40px 20px;  
+}
+
+nav ul {
+    list-style: none;
+    font-weight: bold;       
+    display: flex;
+    justify-content: space-around;
+    margin-top: 40px;      
+    text-align: center;
+    width: 60vw;
+    margin-left: 20%;
+    margin-right: auto;     
+} 
+
+nav a{
+    text-decoration: none;
+    color: #FFEFD5; 
+}
+
+/* estilo para área do formulário */
+main {
+    margin: 40px auto;
+    width: 90%;
+    max-width: 700px;
+}
+
+fieldset {
+    border: none;
+    background-color: #FFF8EE;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+}
+
+/* estilo do tipo  de formulário */
+form h2 {
+    margin-bottom: 20px;
+    color: #D2691E;
+}
+
+form h3 {
+    margin: 25px 0 10px;
+    text-align: left;
+    color: #2F1B14;
+}
+
+/* estilo para as labels e os campos */
+label {
+    display: block;
+    text-align: left;
+    margin: 10px 0 5px;
+    font-weight: bold;
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 6px;
+    border: 1px solid #C68642;
+    font-size: 16px;
+}
+
+/* estilos do checkbox e radio - texto à esquerda, input à direita */
+input[type="checkbox"], input[type="radio"] {
+    width: auto;
+    float: right;
+    margin: 0;
+    margin-top: 3px;
+    clear: right;
+}
+
+/* estilos para Labels que seguem radio/checkbox */
+input[type="radio"] + label,
+input[type="checkbox"] + label {
+    display: block;
+    text-align: left;
+    font-weight: normal;
+    margin: 0;
+    padding: 12px 0;
+    padding-right: 40px;
+    border-bottom: none;
+}
+
+/* estilo para as opções */
+.opcoes {
+    text-align: left;
+    margin-top: 10px;
+}
+
+.opcoes label {
+    display: inline-block;
+    width: 220px;
+    font-weight: normal;
+}
+
+/* estilo para os botões */
+input[type="button"], input[type="submit"], button {
+    background-color: #D2691E;
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+    padding: 12px 25px;
+    margin-top: 25px;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+/* estilo hover para os botões */
+input[type="button"]:hover,
+input[type="submit"]:hover,
+button:hover {
+    background-color: #2F1B14;
+}
+
+/* estilo para o textarea */
+textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+
+/*estilo para o botão do whatsapp*/
+.whatsapp-button {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 40px;
+    right: 40px;
+    background-color: #25d366;
+    color: #FFF;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 30px;
+    box-shadow: 2px 2px 3px #999;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.whatsapp-button img {
+    width: 35px;
+    height: 35px;
+}
+
+.whatsapp-button:hover {
+    background-color: #128c7e;
+}
+
+/* para rolagem suave para toda a página */
+html {
+    scroll-behavior: smooth;
+}
+
+/* estilo do botão topo */
+.btn-topo {
+    position: fixed;
+    right: 40px;
+    bottom: 110px;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+}
+
+.btn-topo img {
+    transition: 0.3s;
+}
+
+.btn-topo img:hover {
+    transform: scale(1.1);
+}
+

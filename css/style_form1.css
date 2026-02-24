@@ -1,0 +1,375 @@
+/*reset do css no navegador*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* estilo de todo o site e titulos h1 2 h2 */
+body {
+    font-family: "Roboto", sans-serif;
+    background: #FFEFD5;
+    color: #2F1B14;
+    text-align: center;
+}
+
+/* estilo para o header e a navegação */
+header {
+    background-color: #D2691E;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+header img {
+    width: 180px;
+    float: left;
+}
+
+h1 {
+    color: #2F1B14;
+    width: 50%;
+    margin: 0 auto;
+}
+
+header h1 {
+    font-size: 50px;
+    font-weight: 700px;        
+}
+
+header h2 {
+    font-size: 32px;
+    margin-top: 30px;
+    color: #FFEFD5;
+    width: 90%;    
+}
+
+.header-fixo {  
+  position: sticky;
+  top: 0; /* Cola no topo */  
+  color: white;
+  padding: 40px 20px;  
+}
+
+nav ul {
+    list-style: none;
+    font-weight: bold;       
+    display: flex;
+    justify-content: space-around;
+    margin-top: 40px;      
+    text-align: center;
+    width: 60vw;
+    margin-left: 20%;
+    margin-right: auto;     
+} 
+
+nav a{
+    text-decoration: none;
+    color: #FFEFD5; 
+}
+
+/* estilo para área do formulário */
+main {
+    margin: 40px auto;
+    width: 90%;
+    max-width: 700px;
+}
+
+fieldset {
+    border: none;
+    background-color: #FFF8EE;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+}
+
+/* estilo do tipo  de formulário */
+form h2 {
+    margin-bottom: 20px;
+    color: #D2691E;
+}
+
+form h3 {
+    margin: 25px 0 10px;
+    text-align: left;
+    color: #2F1B14;
+}
+
+/* estilo para as labels e os campos */
+label {
+    display: block;
+    text-align: left;
+    margin: 10px 0 5px;
+    font-weight: bold;
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 6px;
+    border: 1px solid #C68642;
+    font-size: 16px;
+}
+
+/* estilos do checkbox e radio - texto à esquerda, input à direita */
+input[type="checkbox"], input[type="radio"] {
+    width: auto;
+    float: right;
+    margin: 0;
+    margin-top: 3px;
+    clear: right;
+}
+
+/* estilos para Labels que seguem radio/checkbox */
+input[type="radio"] + label,
+input[type="checkbox"] + label {
+    display: block;
+    text-align: left;
+    font-weight: normal;
+    margin: 0;
+    padding: 12px 0;
+    padding-right: 40px;
+    border-bottom: none;
+}
+
+/* estilo para as opções */
+.opcoes {
+    text-align: left;
+    margin-top: 10px;
+}
+
+.opcoes label {
+    display: inline-block;
+    width: 220px;
+    font-weight: normal;
+}
+
+/* estilo para os botões */
+input[type="button"], input[type="submit"], button {
+    background-color: #D2691E;
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+    padding: 12px 25px;
+    margin-top: 25px;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+/* estilo hover para os botões */
+input[type="button"]:hover,
+input[type="submit"]:hover,
+button:hover {
+    background-color: #2F1B14;
+}
+
+/* estilo para o textarea */
+textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+
+/*estilo para o botão do whatsapp*/
+.whatsapp-button {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 40px;
+    right: 40px;
+    background-color: #25d366;
+    color: #FFF;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 30px;
+    box-shadow: 2px 2px 3px #999;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.whatsapp-button img {
+    width: 35px;
+    height: 35px;
+}
+
+.whatsapp-button:hover {
+    background-color: #128c7e;
+}
+
+/* para rolagem suave para toda a página */
+html {
+    scroll-behavior: smooth;
+}
+
+/* estilo do botão topo */
+/*.btn-topo {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 60px 120px 20px;
+    background-color: none;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    display: block;   
+}*/
+
+/* BOTÃO TOPO AJUSTADO */
+.btn-topo {
+    position: fixed;
+    right: 40px;          /* mesma posição horizontal do WhatsApp */
+    bottom: 110px;        /* fica acima do WhatsApp */
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+}
+
+.btn-topo img {
+    transition: 0.3s;
+}
+
+.btn-topo img:hover {
+    transform: scale(1.1);
+}
+
+
+/* padrão MOBILE (320px – 767px)
+===================================================== */
+
+@media (max-width: 767px) {
+
+    header {
+        padding: 25px 15px;
+    }
+
+    header img {
+        float: none;
+        display: block;
+        margin: 0 auto 15px auto;
+        width: 110px;
+    }
+
+    header h1 {
+        font-size: 26px;
+        width: 100%;
+    }
+
+    header h2 {
+        font-size: 18px;
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        width: 100%;
+        margin: 20px 0;
+        gap: 10px;
+    }
+
+    main {
+        width: 95%;
+        margin: 30px auto;
+    }
+
+    fieldset {
+        padding: 20px;
+    }
+
+    input, select, textarea {
+        font-size: 15px;
+        padding: 12px;
+    }
+
+    /* Corrige problema de float em checkbox/radio no mobile */
+    input[type="checkbox"],
+    input[type="radio"] {
+        float: none;
+        display: inline-block;
+        margin-right: 8px;
+    }
+
+    input[type="radio"] + label,
+    input[type="checkbox"] + label {
+        padding-right: 0;
+        display: inline-block;
+    }
+
+    .opcoes label {
+        width: 100%;
+        display: block;
+        padding: 8px 0;
+    }
+
+    input[type="submit"],
+    input[type="button"],
+    button {
+        width: 100%;
+        font-size: 16px;
+    }
+
+    /* Ajuste botões flutuantes */
+    .whatsapp-button {
+        width: 50px;
+        height: 50px;
+        bottom: 20px;
+        right: 20px;
+    }
+
+    .btn-topo {
+        right: 20px;
+        bottom: 90px;
+        width: 50px;
+        height: 50px;
+        padding: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+
+/* =====================================================
+   📲 TABLET (768px – 1023px)
+===================================================== */
+
+@media (min-width: 768px) and (max-width: 1023px) {
+
+    header h1 {
+        font-size: 36px;
+    }
+
+    main {
+        max-width: 600px;
+    }
+
+    fieldset {
+        padding: 25px;
+    }
+
+    input[type="submit"],
+    input[type="button"],
+    button {
+        width: 70%;
+    }
+}
+
+
+/* =====================================================
+   💻 DESKTOP (1024px+)
+===================================================== */
+
+@media (min-width: 1024px) {
+
+    main {
+        max-width: 700px;
+    }
+
+}
+
+
