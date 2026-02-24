@@ -64,7 +64,7 @@ window.onload = function() {
     }
 };
 
-/////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+// 23 - 02 - 2026 - atualização de javascript 
 
 //Uma função que exiba uma mensagem de boas-vindas
 function mostrarBoasVindas() {

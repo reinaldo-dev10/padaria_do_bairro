@@ -91,7 +91,7 @@ main p {
     margin: 0 auto;
 }
 
-/*estila para tabela de preços*/
+/*estilo para tabela de preços*/
 
 table {
     margin-left: auto;
@@ -195,10 +195,7 @@ article:hover {
 
 video,
 iframe {
-    border-radius: 16px;
-    /*margin: 25px auto;*/
-    /*width: 100%;
-    height: auto;*/
+    border-radius: 16px;    
 }
 
 .container-videos {
@@ -217,8 +214,7 @@ iframe {
 
 .container-videos video:hover {
     transform: scale(1.02);
-    border-color: #bc9667;
-    /* Cor de destaque */
+    border-color: #bc9667; /* Cor de destaque */    
 }
 
 .qualidade li {
