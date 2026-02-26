@@ -104,3 +104,28 @@ function calcularPreco(preco, produto){
 
 //arrow function
 const calcularPrecos = (preco, produto) => {preco * produto};
+
+//pesquisa de produtos - exemplo de filtro usando o método filter() e includes()
+//para ciar listas usamos um array
+
+const listaProduto = [
+    { nome: "Pão de sal", caracteristica: "Pão fresquinho, crocante por fora e macio por dentro" },
+    { nome: "Sonho de chocolate", caracteristica: "Recheio cremoso de amendoim e castanha sob cobertura de chocolate" },
+    { nome: "Empadinha", caracteristica: "Massa leve e recheio saboroso, perfeita para um lanche rápido" },
+    { nome: "Café", caracteristica: "Café coado na hora, com aroma irresistível e sabor encorpado" },
+];
+
+document.getElementById("campo-filtro").addEventListener("input", (e) => {
+  console.log("digitando", e.target.value)
+  const valor = e.target.value.toLowerCase();
+  const resultado = document.getElementById("resultado");
+  resultado.innerHTML = "";
+
+   listaProduto
+     .filter((produto) => produto.nome.toLowerCase().includes(valor))
+     .forEach((produto) => {
+       const li = document.createElement("li");
+       li.textContent = `${produto.nome} - ${produto.caracteristica}`;
+       resultado.appendChild(li);
+     });
+});
