@@ -109,10 +109,10 @@ const calcularPrecos = (preco, produto) => {preco * produto};
 //para ciar listas usamos um array
 
 const listaProduto = [
-    { nome: "Pão de sal", caracteristica: "Pão fresquinho, crocante por fora e macio por dentro" },
-    { nome: "Sonho de chocolate", caracteristica: "Recheio cremoso de amendoim e castanha sob cobertura de chocolate" },
-    { nome: "Empadinha", caracteristica: "Massa leve e recheio saboroso, perfeita para um lanche rápido" },
-    { nome: "Café", caracteristica: "Café coado na hora, com aroma irresistível e sabor encorpado" },
+    { nome: "Pão de sal", caracteristica: "Pão fresquinho, crocante por fora e macio por dentro." },
+    { nome: "Sonho de chocolate", caracteristica: "Recheio cremoso de amendoim e castanha sob cobertura de chocolate." },
+    { nome: "Empadinha", caracteristica: "Massa leve e recheio saboroso, perfeita para um lanche rápido." },
+    { nome: "Café", caracteristica: "Café coado na hora, com aroma irresistível e sabor encorpado."},    
 ];
 
 document.getElementById("campo-filtro").addEventListener("input", (e) => {

@@ -5,7 +5,7 @@
     box-sizing: border-box;
 }
 
-/* estilo de todo o site e titulos h1 2 h2 */
+/*estilo de todo o site e titulos h1 2 h2*/
 body {
     font-family: "Roboto", sans-serif;
     background: #FFEFD5;
@@ -13,11 +13,9 @@ body {
     text-align: center;
 }
 
-/* estilo para o header e a navegação */
 header {
     background-color: #D2691E;
     text-align: center;
-    padding: 40px 20px;
 }
 
 header img {
@@ -27,44 +25,60 @@ header img {
 
 h1 {
     color: #2F1B14;
-    width: 50%;
-    margin: 0 auto;
+    width: 50%;    /* Largura necessária */
+    margin: 0 auto;    /* Centraliza horizontalmente */
 }
 
 header h1 {
     font-size: 50px;
-    font-weight: 700px;        
+    font-weight: 700px;
 }
 
 header h2 {
     font-size: 32px;
     margin-top: 30px;
     color: #FFEFD5;
-    width: 90%;    
+    width: 90%;    /* Largura necessária */
 }
 
-.header-fixo {  
-  position: sticky;
-  top: 0; /* Cola no topo */  
-  color: white;
-  padding: 40px 20px;  
+.header-fixo {
+    position: sticky;
+    top: 0; /* Cola no topo */
+    z-index: 1000;    
+    color: white;
+    padding: 40px 20px;
 }
 
+/*estilo para navegação*/
 nav ul {
     list-style: none;
-    font-weight: bold;       
+    font-weight: bold;
     display: flex;
     justify-content: space-around;
-    margin-top: 40px;      
+    margin-top: 40px;
     text-align: center;
     width: 60vw;
     margin-left: 20%;
-    margin-right: auto;     
-} 
+    margin-right: auto;
+}
 
-nav a{
+nav ul li a {
     text-decoration: none;
-    color: #FFEFD5; 
+    color: #fff;
+    font-weight: 600;
+    padding: 10px 22px;
+    border-radius: 30px;
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(4px);
+    transition: all 0.3s ease;
+}
+
+nav a:hover {
+    background-color: #2F1B14;
+    ;
+    font-weight: bold;
+    border-radius: 100px;
+    padding: 9px 14px;
 }
 
 /* estilo para área do formulário */
@@ -204,19 +218,6 @@ html {
 }
 
 /* estilo do botão topo */
-/*.btn-topo {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    padding: 60px 120px 20px;
-    background-color: none;
-    color: #fff;
-    text-decoration: none;
-    border-radius: 5px;
-    display: block;   
-}*/
-
-/* BOTÃO TOPO AJUSTADO */
 .btn-topo {
     position: fixed;
     right: 40px;          /* mesma posição horizontal do WhatsApp */
@@ -238,13 +239,12 @@ html {
 }
 
 
-/* padrão MOBILE (320px – 767px)
-===================================================== */
+/* para tela de mobile (320px – 767px) */
 
 @media (max-width: 767px) {
 
-    header {
-        padding: 25px 15px;
+    .header-fixo {
+        padding: 20px 15px;
     }
 
     header img {
@@ -257,19 +257,32 @@ html {
     header h1 {
         font-size: 26px;
         width: 100%;
+        margin-bottom: 10px;
     }
 
     header h2 {
-        font-size: 18px;
+        font-size: 16px;
         width: 100%;
-        margin-top: 10px;
+        margin-top: 5px;
+        margin-bottom: 20px;
     }
 
     nav ul {
         flex-direction: column;
+        align-items: center;
         width: 100%;
-        margin: 20px 0;
-        gap: 10px;
+        margin: 0;
+        padding: 0;
+        gap: 12px;
+    }
+
+    nav ul li {
+        width: 90%;
+    }
+
+    nav ul li a {
+        display: block;
+        width: 100%;
     }
 
     main {

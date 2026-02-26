@@ -25,10 +25,8 @@ header img {
 
 h1 {
     color: #2F1B14;
-    width: 50%;
-    /* Largura necessária */
-    margin: 0 auto;
-    /* Centraliza horizontalmente */
+    width: 50%;    /* Largura necessária */
+    margin: 0 auto;    /* Centraliza horizontalmente */
 }
 
 header h1 {
@@ -40,14 +38,13 @@ header h2 {
     font-size: 32px;
     margin-top: 30px;
     color: #FFEFD5;
-    width: 90%;
-    /* Largura necessária */
+    width: 90%;    /* Largura necessária */
 }
 
 .header-fixo {
     position: sticky;
-    top: 0;
-    /* Cola no topo */
+    top: 0; /* Cola no topo */
+    z-index: 1000;    
     color: white;
     padding: 40px 20px;
 }
@@ -141,6 +138,61 @@ article {
 
 article:hover {
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+/* estilo dpo campo input de pesquisa de produtos  */
+
+.pesquisa {
+    background-color: #FFEFD5;
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+}
+
+.pesquisa h2 {
+    margin-bottom: 20px;
+    color: #D2691E;
+}
+
+/* campo de busca */
+#campo-filtro {
+    width: 100%;
+    padding: 14px 20px;
+    border-radius: 30px;
+    border: 2px solid #D2691E;
+    outline: none;
+    font-size: 16px;
+    transition: 0.3s ease;
+}
+
+/* efeito ao clicar */
+#campo-filtro:focus {
+    border-color: #2F1B14;
+    box-shadow: 0 0 10px rgba(210,105,30,0.4);
+}
+
+/* lista de resultados */
+#resultado {
+    list-style: none;
+    margin-top: 20px;
+    padding: 0;    
+}
+
+#resultado li {
+    background-color: #FFEFD5;
+    padding: 12px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    text-align: left;
+    transition: 0.3s ease;
+}
+
+#resultado li:hover {
+    background-color: #D2691E;
+    color: white;
+    cursor: pointer;
 }
 
 /*estilo da seção cardápio*/
@@ -472,3 +524,8 @@ html {
     }
 }
 
+@media (max-width: 767px) {
+    .pesquisa {
+    width: 95%;
+    padding: 20px;
+}
