@@ -75,7 +75,6 @@ nav ul li a {
 
 nav a:hover {
     background-color: #2F1B14;
-    ;
     font-weight: bold;
     border-radius: 100px;
     padding: 9px 14px;
@@ -437,6 +436,19 @@ html {
         height: 50px;
         bottom: 20px;
         right: 20px;
+    }   
+    
+    .btn-topo {
+    position: fixed;
+    right: 20px;
+    bottom: 110px;
+    width: 60px;
+    height: 60px;    
+    }
+
+    .btn-topo img {
+        width: 50px;
+        height: 50px;
     }
 }
 
@@ -471,7 +483,7 @@ html {
 
     .container-videos video {
         max-width: 45%;
-    }
+    }     
 }
 
 /* para tela de desktop (1024px – 1199px) */
